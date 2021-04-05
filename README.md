@@ -87,18 +87,33 @@
 >kubernetes_redis_image_tag: "6.2.1"
 >
 >kubernetes_redis_config_mount_path: "/usr/local/etc/redis/redis.conf"
-openshift_pg_emptydir: false
-openshift_pg_pvc_name: postgresql
-kubernetes_deployment_name: awx
-kubernetes_serviceaccount_name: awx
-kubernetes_deployment_replica_size: 1
-postgress_activate_wait: 60
-restore_backup_file: "./tower-openshift-backup-latest.tar.gz"
-insights_url_base: "https://example.org"
-automation_analytics_url: "https://example.org"
-insights_agent_mime: "application/example"
-custom_venvs_path: "/opt/custom-venvs"
-custom_venvs_python: "python2"
-ca_trust_bundle: "/etc/pki/tls/certs/ca-bundle.crt"
-container_groups_image: "ansible/ansible-runner"
-uwsgi_bash: "bash -c"
+>
+>openshift_pg_emptydir: false
+>
+>openshift_pg_pvc_name: postgresql
+>
+>kubernetes_deployment_name: awx
+>
+>kubernetes_serviceaccount_name: awx
+>
+>kubernetes_deployment_replica_size: 1
+>
+>postgress_activate_wait: 60
+>
+>restore_backup_file: "./tower-openshift-backup-latest.tar.gz"
+>
+>insights_url_base: "https://example.org"
+>
+>automation_analytics_url: "https://example.org"
+>
+>insights_agent_mime: "application/example"
+>
+>custom_venvs_path: "/opt/custom-venvs"
+>
+>custom_venvs_python: "python2"
+>
+>ca_trust_bundle: "/etc/pki/tls/certs/ca-bundle.crt"
+>
+>container_groups_image: "ansible/ansible-runner"
+>
+>uwsgi_bash: "bash -c"
