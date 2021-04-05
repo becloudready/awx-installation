@@ -153,3 +153,8 @@ spec:
             serviceName: awx-web-svc
             servicePort: 80
 ```
+* Create the Ingress resource by running the following command
+> kubectl apply -f awx-ingress.yml 
+
+* Verify the IP address is set:
+> kubectl get ingress
