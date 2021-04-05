@@ -135,4 +135,32 @@
 * Since, I am using Digital Ocean Cloud platform, I will run the following command to install Nginx ingress controller.
 > kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.44.0/deploy/static/provider/do/deploy.yaml
 
-* Next, we will create a ingress resource file **awx-ingress.yml**, so that we will able to access the awx site with **External IP** of ingress controller. 
+* Next, we will create a ingress resource file **awx-ingress.yml**, so that we will be able to access the awx site with **External IP** of ingress controller. 
+* Contents of **awx-ingress.yml** will be as shown below.
+>apiVersion: extensions/v1beta1
+>
+>kind: Ingress
+>
+>metadata:
+>
+  >name: awx-ingress
+  >
+  >annotations:
+  >
+    >nginx.ingress.kubernetes.io/rewrite-target: /
+  >  
+>spec:
+>
+  >rules:
+  >
+  >- http:
+  >
+      >paths:
+      >
+        >- path: /
+        >
+          >backend:
+          >
+            >serviceName: awx-web-svc
+            >
+            >servicePort: 80
