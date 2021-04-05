@@ -128,3 +128,4 @@
 * To access the AWX web interface with **NodePort IP** & **NodePort port number** run the following command
 > kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
 * Now you can access the awx web interface at http://NodePort-IP:Port
+* Since its not good practice to access th site with **NodePort IP** & **NodePort port number** because whenever node fails & restarts its **NodePort IP** & **NodePort port number** changes, so end user will not be able to access the site.  
