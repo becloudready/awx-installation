@@ -128,4 +128,5 @@
 * To access the AWX web interface with **NodePort IP** & **NodePort port number** run the following command
 > kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
 * Now you can access the awx web interface at http://NodePort-IP:Port
-* Since its not good practice to access th site with **NodePort IP** & **NodePort port number** because whenever node fails & restarts its **NodePort IP** & **NodePort port number** changes, so end user will not be able to access the site.  
+* Since its not good practice to access the site with **NodePort IP** & **NodePort port number** because whenever node fails & restarts its **NodePort IP** & **NodePort port number** changes, so end user will not be able to access the site.
+* To overcome this issue, we are going to install Nginx Ingress controller inside the Kubernetes Cluster. This Ingress controller will be having a static **external ip** with which we are able to access the site even if node fails & restart  
