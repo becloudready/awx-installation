@@ -137,3 +137,18 @@
 
 * Next, we will create a ingress resource file **awx-ingress.yml**, so that we will be able to access the awx site with **External IP** of ingress controller. 
 * Contents of **awx-ingress.yml** will be as shown below.
+>>apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: awx-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+        - path: /
+          backend:
+            serviceName: awx-web-svc
+            servicePort: 80
+
