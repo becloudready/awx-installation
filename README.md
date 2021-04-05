@@ -167,7 +167,7 @@ spec:
 * Create Kubernetes Secret
 > kubectl create secret tls tls-secret --key tls.key --cert tls.crt
 
-# Use Certification Secret within Nginx Ingress Controller
+# Step 7: Use Certification Secret within Nginx Ingress Controller
 * We now need to add the secret to the previously created ingress resource file **awx-ingress.yml** as shown below.
 ```
 apiVersion: networking.k8s.io/v1beta1
@@ -190,3 +190,6 @@ spec:
 * Now,apply the secret by running the following command
 > kubectl apply -f awx-ingress.yml
 
+# Step 8:  Access the Application via HTTPS
+* Accessing the application via HTTPS is simple: we just need to add ‚https://‘ in front of the domain:
+> curl -k https://DOMAIN_NAME
