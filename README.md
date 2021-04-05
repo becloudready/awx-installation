@@ -159,6 +159,12 @@ spec:
 * Verify the IP address is set:
 > kubectl get ingress
 
-* Now copy the **External IP** of ingress controller and paste it in your browser, we will be able to access the awx site
+* Now copy the **External IP** of ingress controller and paste it in your browser, we will be able to access the awx site.
+
+# Step 6: Create TLS certificate
+* Let us create a self signed TLS certificate by running the following command.
+> openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout tls.key -out tls.crt -subj "/CN=awxsvc/O=awxsvc"
+* Create Kubernetes Secret
+> kubectl create secret tls tls-secret --key tls.key --cert tls.crt
 
 
