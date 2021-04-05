@@ -193,3 +193,6 @@ spec:
 # Step 8:  Access the Application via HTTPS
 * Accessing the application via HTTPS is simple: we just need to add ‚https://‘ in front of the domain:
 > curl -k https://DOMAIN_NAME
+* Thats It, awx site is reachable via HTTPS
+
+
