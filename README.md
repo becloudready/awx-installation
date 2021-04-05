@@ -123,3 +123,7 @@
 > ansible-playbook -i inventory install.yml
 >
 > It will take around 5-10 minutes to complete.
+
+# Step: 4 Access the AWX Web UI
+* To access the AWX web interface with **NodePort IP** & **NodePort port number** run the following command
+> kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
