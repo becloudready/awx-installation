@@ -5,15 +5,15 @@
 * A Kubernetes Cluster.
 * A Kubectl CLI Tool.
 
-# Step: 1
-## Clone the AWX GitHub repository
+# Step: 1 Clone the AWX GitHub repository
+
 > git clone https://github.com/becloudready/awx.git
 >
 > cd awx
 >
 > git checkout -b branch-17
 
-# Step: 2
+# Step: 2 Edit & Delete the following files
 * Now go inside the installer directory
 > cd installer
 * Edit the following values in the inventory file.
@@ -118,7 +118,7 @@
 >
 >uwsgi_bash: "bash -c"
 
-# Step: 3
+# Step: 3 Run the Ansible Playbook
 * Now go to the directory awx/installer & run the ansible playbook **install.yml** by running the following command.
 > ansible-playbook -i inventory install.yml
 >
