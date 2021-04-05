@@ -129,4 +129,8 @@
 > kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
 * Now you can access the awx web interface at http://NodePort-IP:Port
 * Since its not good practice to access the site with **NodePort IP** & **NodePort port number** because whenever node fails & restarts its **NodePort IP** & **NodePort port number** changes, so end user will not be able to access the site.
-* To overcome this issue, we are going to install Nginx Ingress controller inside the Kubernetes Cluster. This Ingress controller will be having a static **external ip** with which we are able to access the site even if node fails & restart  
+* To overcome this issue, we are going to install Nginx Ingress controller inside the Kubernetes Cluster. This Ingress controller will be having a static **external ip** with which we are able to access the site even if node fails & restart.
+
+# Step 5: Install Nginx Ingress Controller
+* Since, I am using Digital Ocean Cloud platform, I will run the following command to install Nginx ingress controller.
+> kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.44.0/deploy/static/provider/do/deploy.yaml
