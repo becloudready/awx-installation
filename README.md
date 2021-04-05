@@ -1,5 +1,5 @@
 # AWX-Installation
-> This repo provides the details how to install to AWX in Kubernetes.
+> This repo provides the details how to install to AWX in Kubernetes cluster & enable self signed certificate to nginx ingress controller.
 
 # Prerequisites
 * A Kubernetes Cluster.
