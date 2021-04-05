@@ -167,4 +167,25 @@ spec:
 * Create Kubernetes Secret
 > kubectl create secret tls tls-secret --key tls.key --cert tls.crt
 
+# Use Certification Secret within Nginx Ingress Controller
+* We now need to add the secret to the previously created ingress resource file **awx-ingress.yml** as shown below.
+```
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: awx-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+  - secretName: tls-secret-nginx
+  rules:
+  - host: www.awx.com
+    http:
+      paths:
+      - backend:
+          serviceName: awx-web-svc
+          servicePort: 80
+```
+
 
