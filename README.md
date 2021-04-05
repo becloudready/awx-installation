@@ -187,5 +187,6 @@ spec:
           serviceName: awx-web-svc
           servicePort: 80
 ```
-
+* Now,apply the secret by running the following command
+> kubectl apply -f awx-ingress.yml
 
