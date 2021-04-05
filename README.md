@@ -122,10 +122,11 @@ uwsgi_bash: "bash -c"
 
 # Step 3: Run the Ansible Playbook
 * Now go to the directory awx/installer & run the ansible playbook **install.yml** by running the following command.
-> ansible-playbook -i inventory install.yml
->
-> It will take around 5-10 minutes to complete.
+```
+ansible-playbook -i inventory install.yml
 
+It will take around 5-10 minutes to complete.
+```
 # Step 4: Access the AWX Web UI
 * To access the AWX web interface with **NodePort IP** & **NodePort port number** run the following command
 > kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
