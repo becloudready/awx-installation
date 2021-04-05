@@ -158,3 +158,7 @@ spec:
 
 * Verify the IP address is set:
 > kubectl get ingress
+
+* Now copy the **External IP** of ingress controller and paste it in your browser, we will be able to access the awx site
+
+
