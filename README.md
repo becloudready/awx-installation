@@ -26,3 +26,6 @@
 > admin_user=admin          # Default user name
 >
 > admin_password=password   # Default password
+
+* Now go back to installer directory & delete the following line from install.yml file
+> - {role: local_docker, when: "openshift_host is not defined and kubernetes_context is not defined"}
