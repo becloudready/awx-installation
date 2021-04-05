@@ -153,11 +153,11 @@
 >
 >  rules:
 >
->  - http:
+>>  - http:
 >
 >      paths:
 >
->        - path: /
+>>        - path: /
 >
 >          backend:
 >
