@@ -5,7 +5,7 @@
 * A Kubernetes Cluster.
 * A Kubectl CLI Tool.
 
-# Step: 1 Clone the AWX GitHub repository
+# Step 1: Clone the AWX GitHub repository
 
 > git clone https://github.com/becloudready/awx.git
 >
@@ -13,7 +13,7 @@
 >
 > git checkout -b branch-17
 
-# Step: 2 Edit & Delete the following files
+# Step 2: Edit & Delete the following files
 * Now go inside the installer directory
 > cd installer
 * Edit the following values in the inventory file.
@@ -118,13 +118,13 @@
 >
 >uwsgi_bash: "bash -c"
 
-# Step: 3 Run the Ansible Playbook
+# Step 3: Run the Ansible Playbook
 * Now go to the directory awx/installer & run the ansible playbook **install.yml** by running the following command.
 > ansible-playbook -i inventory install.yml
 >
 > It will take around 5-10 minutes to complete.
 
-# Step: 4 Access the AWX Web UI
+# Step 4: Access the AWX Web UI
 * To access the AWX web interface with **NodePort IP** & **NodePort port number** run the following command
 > kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t
 * Now you can access the awx web interface at http://NodePort-IP:Port
