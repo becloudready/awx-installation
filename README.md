@@ -17,16 +17,17 @@
 * Now go inside the installer directory
 > cd installer
 * Edit the following values in the inventory file.
-> kubernetes_context=Your context name  # You can find this in kubeconfig file
->
-> kubernetes_namespace=Your namespace   # You can give any name for namespace
->
-> kubernetes_web_svc_type=NodePort
->
-> admin_user=admin          # Default user name
->
-> admin_password=password   # Default password
+```
+kubernetes_context=Your context name  # You can find this in kubeconfig file
 
+kubernetes_namespace=Your namespace   # You can give any name for namespace
+
+kubernetes_web_svc_type=NodePort
+
+admin_user=admin          # Default user name
+
+admin_password=password   # Default password
+```
 * Now go back to installer directory & delete the following line from install.yml file
 > {role: local_docker, when: "openshift_host is not defined and kubernetes_context is not defined"}
 * Next, edit the main.yml file placed inside awx/installer/roles/Kubernetes/default/ directory with the following content.
