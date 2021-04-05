@@ -117,3 +117,7 @@
 >container_groups_image: "ansible/ansible-runner"
 >
 >uwsgi_bash: "bash -c"
+
+# Step: 3
+* Now go to the directory awx/installer & run the ansible playbook install.yml by running the following command.
+> ansible-playbook -i inventory install.yml
