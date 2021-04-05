@@ -121,3 +121,5 @@
 # Step: 3
 * Now go to the directory awx/installer & run the ansible playbook **install.yml** by running the following command.
 > ansible-playbook -i inventory install.yml
+>
+> It will take around 5-10 minutes to complete.
