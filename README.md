@@ -4,3 +4,6 @@
 # Prerequisites
 * A Kubernetes Cluster
 * A Kubectl CLI
+
+# Clone the AWX GitHub repository
+> [link] (https://github.com/becloudready/awx.git)
