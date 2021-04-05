@@ -5,7 +5,7 @@
 * A Kubernetes Cluster.
 * A Kubectl CLI Tool.
 
-# Step:1
+# Step: 1
 ## Clone the AWX GitHub repository
 > git clone https://github.com/becloudready/awx.git
 >
@@ -13,4 +13,4 @@
 >
 > git checkout -b branch-17
 
-# Step:2
+# Step: 2
