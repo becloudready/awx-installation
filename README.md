@@ -30,7 +30,7 @@
 * Now go back to installer directory & delete the following line from install.yml file
 > {role: local_docker, when: "openshift_host is not defined and kubernetes_context is not defined"}
 * Next, edit the main.yml file placed inside awx/installer/roles/Kubernetes/default/ directory with the following content.
-> ---
+> 
 >
 >dockerhub_version: "{{ lookup('file', playbook_dir + '/../VERSION') }}"
 >
