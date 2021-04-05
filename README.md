@@ -22,3 +22,7 @@
 > kubernetes_namespace=Your namespace # You can give any name for namespace
 >
 > kubernetes_web_svc_type=NodePort
+>
+> admin_user=admin # Default user name
+>
+> admin_password=password # Default password
