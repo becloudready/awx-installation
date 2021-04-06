@@ -14,4 +14,8 @@
 * Now, we will create new user by clicking on user option and enter the following details as shown in figure below & click save.
 ![](https://github.com/becloudready/awx-installation/blob/main/user.PNG)
 
+# Step 3: Create new inventory
+* Next, we will create new inventory by entering following details as shown in figure below & click save.
+![]()
+
 
