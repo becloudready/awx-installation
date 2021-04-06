@@ -25,6 +25,6 @@
 
 # Step 5: Create new credentials
 * Now, we will create new credentials by entering the following details as shown in figure below & click save.
-![]()
+![](https://github.com/becloudready/awx-installation/blob/main/credentials.PNG)
 
 
