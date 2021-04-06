@@ -7,6 +7,7 @@
 * A Key pair (pem format) 
 
 # Step 1: Create new organization.
-* First, we will create a new organization by name **devops** & description **my devops** as shown in figure below.
+* First, we will create a new organization by clicking on Organizations option by the name **devops** & description **my devops** as shown in figure below.
+![Organization](C:\Users\kunal\Downloads\organization)
 
 
