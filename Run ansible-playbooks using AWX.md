@@ -20,6 +20,6 @@
 
 # Step 4: Create new host
 * Now, to create host click on the recently created inventory and select the hosts at the top and enter the following details as shown in figure and click save.
-![]()
+![](https://github.com/becloudready/awx-installation/blob/main/host.PNG)
 
 
