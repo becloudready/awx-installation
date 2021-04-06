@@ -35,6 +35,14 @@
 
 # Step 7: Create new Template
 * Now, we will create new template by entering the following details and click save.
+* In job template, select the following 
+  ```
+  Job type as **run**
+  Inventory as **test demo**
+  Project as **create_dir**
+  Playbook as **create_directory.yml**
+  SSH as **amazon**
+  ```
 ![](https://github.com/becloudready/awx-installation/blob/main/template.PNG)
 
 
