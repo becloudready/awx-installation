@@ -51,6 +51,7 @@
 
 # Output
 * Below screenshot shows ansible playbook executed successfully.
-![]()
+![](https://github.com/becloudready/awx-installation/blob/main/output_awx.PNG)
+* Congratulations!!!!, we have successfully executed ansible playbook on remote aws amazon machine using AWX.
 
 
