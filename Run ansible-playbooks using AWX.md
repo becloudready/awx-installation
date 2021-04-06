@@ -30,7 +30,7 @@
 ![](https://github.com/becloudready/awx-installation/blob/main/credentials.PNG)
 
 # Step 6: Create new project
-* Next, we will create project by entering the following details.
+* Next, we will create project by entering the following details and click save.
 ![](https://github.com/becloudready/awx-installation/blob/main/project.PNG)
 
 
