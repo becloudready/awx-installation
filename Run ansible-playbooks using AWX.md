@@ -49,4 +49,8 @@
 * Finally, to run job template click on templates option and select the job template **create-dir-demo** and click on **Launch Template** icon.
 ![](https://github.com/becloudready/awx-installation/blob/main/run-job-template.PNG)
 
+# Output
+* Below screenshot shows ansible playbook executed successfully.
+![]()
+
 
