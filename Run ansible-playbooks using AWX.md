@@ -20,7 +20,11 @@
 
 # Step 4: Create new host
 * Now, to create host click on the recently created inventory and select the hosts at the top and enter the following details as shown in figure and click save. 
-* Host name can be IP address of remote machine or url.
+* Host name can be IP address of remote machine or dns name.
 ![](https://github.com/becloudready/awx-installation/blob/main/host.PNG)
+
+# Step 5: Create new credentials
+* Now, we will create new credentials by entering the following details as shown in figure below & click save.
+![]()
 
 
