@@ -25,8 +25,12 @@
 
 # Step 5: Create new credentials
 * Now, we will create new credentials by entering the following details as shown in figure below & click save.
-* Enter the username as **ec2-user** & password as **ec2-user**
+* Enter the username as **ec2-user** & password as **ec2-user**.
 * For SSH Private key click browser option and select the pem file.Finally click on save. 
 ![](https://github.com/becloudready/awx-installation/blob/main/credentials.PNG)
+
+# Step 6: Create new project
+* Next, we will create project by entering the following details.
+![]()
 
 
