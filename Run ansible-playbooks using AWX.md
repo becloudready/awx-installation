@@ -16,6 +16,6 @@
 
 # Step 3: Create new inventory
 * Next, we will create new inventory by entering following details as shown in figure below & click save.
-![]()
+![](https://github.com/becloudready/awx-installation/blob/main/inventory.PNG)
 
 
