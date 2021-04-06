@@ -31,6 +31,6 @@
 
 # Step 6: Create new project
 * Next, we will create project by entering the following details.
-![]()
+![](https://github.com/becloudready/awx-installation/blob/main/project.PNG)
 
 
