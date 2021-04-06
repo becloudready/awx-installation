@@ -34,7 +34,7 @@
 ![](https://github.com/becloudready/awx-installation/blob/main/project.PNG)
 
 # Step 7: Create new Template
-Now, we will create new template by entering the following details and click save.
-![]()
+* Now, we will create new template by entering the following details and click save.
+![](https://github.com/becloudready/awx-installation/blob/main/template.PNG)
 
 
